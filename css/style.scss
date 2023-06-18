@@ -89,6 +89,17 @@ ul {
             display: flex;
             flex-direction: column;
             padding-bottom: 7px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: '';
+                background: url(../icon/circle.svg) no-repeat;
+            }
         }
 
         &__block img {
