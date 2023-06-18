@@ -54,6 +54,9 @@ ul {
   .picture--work img {
     border-radius: 0px 60px;
   }
+  .picture--recall img {
+    border-radius: 0px 150px;
+  }
   .logo {
     font-size: 14px;
     line-height: 17px;
@@ -147,6 +150,9 @@ ul {
   .swiper.swiper--work {
     padding-bottom: 32px;
   }
+  .swiper.swiper--recall {
+    padding-bottom: 32px;
+  }
   .swiper.swiper--indent {
     margin-bottom: 57px;
   }
@@ -224,6 +230,11 @@ ul {
     line-height: 25px;
     color: #7E678B;
     margin-bottom: 18px;
+  }
+  .recall {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: linear-gradient(152.6deg, #CB8CB1 2.14%, #F5D4F7 120.73%);
   }
   .footer {
     background-color: #CB8CB1;

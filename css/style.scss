@@ -81,6 +81,10 @@ ul {
         &--work img {
             border-radius: 0px 60px;
         }
+
+        &--recall img{
+            border-radius: 0px 150px;
+        }
     }
 
     .logo {
@@ -203,6 +207,11 @@ ul {
         padding-bottom: 32px;
     }
 
+    .swiper.swiper--recall {
+        padding-bottom: 32px;
+
+    }
+
     .swiper.swiper--indent {
         margin-bottom: 57px;
     }
@@ -295,6 +304,12 @@ ul {
                 margin-bottom: 18px;
            }
         }
+    }
+
+    .recall {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        background: linear-gradient(152.6deg, #CB8CB1 2.14%, #F5D4F7 120.73%);;
     }
 
     .footer {
