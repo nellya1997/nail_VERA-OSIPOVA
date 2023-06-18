@@ -56,6 +56,11 @@ ul {
 
 /* 567 */
 @media (min-width: 0px) {
+
+    .container {
+        margin: 0 20px;
+    }
+
     .picture {
 
         display: inline-block;
@@ -248,3 +253,17 @@ ul {
     }
 
 }
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 820px;
+    }
+}
+

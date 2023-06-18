@@ -36,6 +36,9 @@ ul {
 
 /* 567 */
 @media (min-width: 0px) {
+  .container {
+    margin: 0 20px;
+  }
   .picture {
     display: inline-block;
   }
@@ -188,5 +191,16 @@ ul {
     line-height: 25px;
     color: #7E678B;
     margin-bottom: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 820px;
   }
 }/*# sourceMappingURL=style.css.map */
