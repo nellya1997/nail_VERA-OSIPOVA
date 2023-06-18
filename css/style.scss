@@ -178,9 +178,14 @@ ul {
         padding-bottom: 32px;
     }
 
+    .swiper.swiper--indent {
+        margin-bottom: 57px;
+    }
+
     .basic {
         background-color: $pink;
         padding-top: 100px;
+        padding-bottom: 60px;
 
         &__subtitle {
             display: inline-block;
@@ -200,6 +205,45 @@ ul {
 
         &__block {
             margin-bottom: 40px;
+        }
+    }
+
+    .link {
+        font-size: 34px;
+        line-height: 40px;
+        color: $dark;
+        display: block;
+        background-color: $purple1;
+        border-radius: 0px 60px;
+        text-decoration: none;
+        padding: 39px 0;
+    }
+
+    .price {
+
+        text-align: center;
+
+        &__content {
+            font-size: 32px;
+            line-height: 38px;
+            display: block;
+
+            &:first-child {
+                margin-bottom: 3px;
+            }
+
+            &:nth-child(2) {
+                font-size: 45px;
+                line-height: 47px;
+            }
+
+            &:nth-child(3) {
+                font-family: 'Robotolight', 'font', sans-serif;
+                font-size: 18px;
+                line-height: 25px;
+                color: $gray;
+                margin-bottom: 18px;
+           }
         }
     }
 
