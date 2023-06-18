@@ -23,6 +23,7 @@ $light-purple: #F6DAFB;
 $purple1: #B48BCA;
 $purple2: #FF8AFC;
 $pink: #F6DAFB;
+$pink1: #CB8CB1;;
 $purple3: #F0BEF5;
 $dark: #2E2931;
 $dark2: #1D191F;
@@ -82,8 +83,13 @@ ul {
         }
 
         &--recall img{
-            border-radius: 0px 110px;
+            border-radius: 0px 150px;
         }
+    }
+
+    .logo {
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .header {
@@ -95,6 +101,17 @@ ul {
             display: flex;
             flex-direction: column;
             padding-bottom: 7px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: '';
+                background: url(../icon/circle.svg) no-repeat;
+            }
         }
 
         &__block img {
@@ -104,10 +121,10 @@ ul {
             margin-bottom: 7px;
         }
 
-        &__content {
-            font-size: 14px;
-            line-height: 17px;
-        }
+        // &__content {
+        //     font-size: 14px;
+        //     line-height: 17px;
+        // }
     }
 
     .title {
@@ -123,9 +140,7 @@ ul {
             position: absolute;
             bottom: 2px;
             border-radius: 0px 90px 0 0;
-            // padding: 21px 63px 11px 10px;
-            background-color: $purple3;
-            // border-radius: 0 60рх 0 0;
+            background-color: #D5A0E1;
             padding: 13px 26px 11px 10px;
         }
 
@@ -141,10 +156,6 @@ ul {
 
         &--center {
             text-align: center;
-        }
-
-        &--recall {
-            margin-bottom: 20px;
         }
     }
 
@@ -196,8 +207,24 @@ ul {
         padding-bottom: 32px;
     }
 
+    .swiper.swiper--recall {
+        padding-bottom: 32px;
+
+    }
+
     .swiper.swiper--indent {
         margin-bottom: 57px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        background-color: $gray;
+        width: 7px;
+        height: 7px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        width: 9px;
+        height: 9px;
     }
 
     .courses {
@@ -236,6 +263,19 @@ ul {
         border-radius: 0px 60px;
         text-decoration: none;
         padding: 39px 0;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &--tel {
+            font-family: 'Robotolight', 'font', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            background-color: transparent;
+            padding: 0;
+        }
     }
 
     .price {
@@ -267,11 +307,27 @@ ul {
     }
 
     .recall {
-
         padding-top: 100px;
+        padding-bottom: 60px;
         background: linear-gradient(152.6deg, #CB8CB1 2.14%, #F5D4F7 120.73%);;
     }
 
+    .footer {
+        background-color: $pink1;
+        padding-top: 20px;
+        padding-bottom: 51px;
+
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            font-family: 'Robotolight', 'font', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 }
 
 @media (min-width: 375px) {

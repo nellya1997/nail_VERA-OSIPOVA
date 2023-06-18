@@ -55,7 +55,11 @@ ul {
     border-radius: 0px 60px;
   }
   .picture--recall img {
-    border-radius: 0px 110px;
+    border-radius: 0px 150px;
+  }
+  .logo {
+    font-size: 14px;
+    line-height: 17px;
   }
   .header {
     background-color: #F6DAFB;
@@ -66,16 +70,22 @@ ul {
     display: flex;
     flex-direction: column;
     padding-bottom: 7px;
+    position: relative;
+  }
+  .header__block::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../icon/circle.svg) no-repeat;
   }
   .header__block img {
     border-radius: 50%;
     width: 43px;
     height: 43px;
     margin-bottom: 7px;
-  }
-  .header__content {
-    font-size: 14px;
-    line-height: 17px;
   }
   .title {
     font-size: 35px;
@@ -90,7 +100,7 @@ ul {
     position: absolute;
     bottom: 2px;
     border-radius: 0px 90px 0 0;
-    background-color: #F0BEF5;
+    background-color: #D5A0E1;
     padding: 13px 26px 11px 10px;
   }
   .title--h2 {
@@ -103,9 +113,6 @@ ul {
   }
   .title--center {
     text-align: center;
-  }
-  .title--recall {
-    margin-bottom: 20px;
   }
   .list--courses {
     padding-left: 42px;
@@ -143,8 +150,20 @@ ul {
   .swiper.swiper--work {
     padding-bottom: 32px;
   }
+  .swiper.swiper--recall {
+    padding-bottom: 32px;
+  }
   .swiper.swiper--indent {
     margin-bottom: 57px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: #7E678B;
+    width: 7px;
+    height: 7px;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    width: 9px;
+    height: 9px;
   }
   .courses {
     background-color: #F6DAFB;
@@ -178,6 +197,17 @@ ul {
     border-radius: 0px 60px;
     text-decoration: none;
     padding: 39px 0;
+    transition: all 0.3s ease-in;
+  }
+  .link:hover {
+    opacity: 0.5;
+  }
+  .link--tel {
+    font-family: "Robotolight", "font", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: transparent;
+    padding: 0;
   }
   .price {
     text-align: center;
@@ -203,7 +233,22 @@ ul {
   }
   .recall {
     padding-top: 100px;
+    padding-bottom: 60px;
     background: linear-gradient(152.6deg, #CB8CB1 2.14%, #F5D4F7 120.73%);
+  }
+  .footer {
+    background-color: #CB8CB1;
+    padding-top: 20px;
+    padding-bottom: 51px;
+  }
+  .footer__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__content {
+    font-family: "Robotolight", "font", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 @media (min-width: 375px) {
