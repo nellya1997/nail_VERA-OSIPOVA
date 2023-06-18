@@ -65,9 +65,11 @@ ul {
     .picture {
 
         display: inline-block;
+        width: 100%;
 
         & img {
             max-width: 100%;
+            width: 100%;
             object-fit: cover;
         }
 
@@ -286,6 +288,14 @@ ul {
     .container {
         margin: 0 auto;
         max-width: 600px;
+    }
+
+    .title {
+        &--h1 {
+            font-size: 45px;
+            line-height: 45px;
+            padding: 29px 121px 11px 10px;
+        }
     }
 }
 

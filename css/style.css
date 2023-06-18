@@ -40,9 +40,11 @@ ul {
   }
   .picture {
     display: inline-block;
+    width: 100%;
   }
   .picture img {
     max-width: 100%;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -215,6 +217,11 @@ ul {
   .container {
     margin: 0 auto;
     max-width: 600px;
+  }
+  .title--h1 {
+    font-size: 45px;
+    line-height: 45px;
+    padding: 29px 121px 11px 10px;
   }
 }
 @media (min-width: 1280px) {
