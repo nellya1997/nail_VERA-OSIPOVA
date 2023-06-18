@@ -126,7 +126,7 @@ ul {
             font-size: 30px;
             line-height: 32px;
             position: absolute;
-            bottom: 0;
+            bottom: 4px;
             border-radius: 0px 90px 0 0;
             // padding: 21px 63px 11px 10px;
             background-color: $purple3;
@@ -199,6 +199,17 @@ ul {
 
     .swiper.swiper--indent {
         margin-bottom: 57px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        background-color: $gray;
+        width: 7px;
+        height: 7px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        width: 9px;
+        height: 9px;
     }
 
     .courses {
