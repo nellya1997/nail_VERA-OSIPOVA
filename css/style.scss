@@ -27,6 +27,7 @@ $purple3: #F0BEF5;
 $dark: #2E2931;
 $dark2: #1D191F;
 $gray: #7E678B;
+$black: #000;
 
 body {
     font-family: 'georgia-regular', 'font', sans-serif;
@@ -58,7 +59,7 @@ ul {
 @media (min-width: 0px) {
 
     .container {
-        margin: 0 20px;
+        margin: 0 15px;
     }
 
     .picture {
@@ -111,13 +112,15 @@ ul {
         margin: 0;
 
         &--h1 {
+            font-size: 30px;
+            line-height: 32px;
             position: absolute;
             bottom: 0;
             border-radius: 0px 90px 0 0;
-            padding: 21px 63px 11px 10px;
+            // padding: 21px 63px 11px 10px;
             background-color: $purple3;
-            border-radius: 0 60рх 0 0;
-            // background-image: linear-gradient(to bottom, #B48BCA, #FF8AFC);
+            // border-radius: 0 60рх 0 0;
+            padding: 13px 26px 11px 10px;
         }
 
         &--h2 {
@@ -191,6 +194,7 @@ ul {
         background-color: $pink;
         padding-top: 100px;
         padding-bottom: 60px;
+        border-bottom: 1px solid $black;
 
         &__subtitle {
             display: inline-block;
@@ -252,6 +256,16 @@ ul {
         }
     }
 
+}
+
+@media (min-width: 375px) {
+    .title {
+        &--h1 {
+            font-size: 37px;
+            line-height: 37px;
+            padding: 27px 56px 11px 10px;
+        }
+    }
 }
 
 @media (min-width: 768px) {
