@@ -11,7 +11,7 @@
     font-family: 'Robotolight';
     src: url(../fonts/Robotolight.woff2) format('woff2'),
          url(../fonts/Robotolight.woff) format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
@@ -22,10 +22,11 @@
 $light-purple: #F6DAFB;
 $purple1: #B48BCA;
 $purple2: #FF8AFC;
-
+$pink: #F6DAFB;
 $purple3: #F0BEF5;
 $dark: #2E2931;
 $dark2: #1D191F;
+$gray: #7E678B;
 
 body {
     font-family: 'georgia-regular', 'font', sans-serif;
@@ -47,7 +48,7 @@ main {
 }
 
 ul {
-    list-style-type: none;
+    // list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -113,6 +114,32 @@ ul {
             border-radius: 0 60рх 0 0;
             // background-image: linear-gradient(to bottom, #B48BCA, #FF8AFC);
         }
+
+        &--h2 {
+            margin-bottom: 7px;
+        }
+
+        &--h3 {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 10px;
+        }
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    .list {
+        &--basic {
+            padding-left: 42px;
+
+            & li {
+                font-size: 24px;
+                line-height: 34px;
+                color: $gray;
+            }
+        }
     }
 
     .about {
@@ -139,7 +166,36 @@ ul {
 
     .swiper-pagination.swiper-pagination-work {
         top: auto;
-        bottom: auto;
+        bottom: -179px;
+
+        & .swiper-pagination-bullet {
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap,2px);
+        }
+    }
+
+    .basic {
+        background-color: $pink;
+        padding-top: 100px;
+
+        &__subtitle {
+            display: inline-block;
+            border-bottom: 1px solid $dark;
+        }
+
+        &__content {
+            font-family: 'Robotolight', 'font', sans-serif;
+            font-weight: 400;
+            color: $gray;
+            font-size: 24px;
+            line-height: 34px;
+            display: block;
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        &__block {
+            margin-bottom: 40px;
+        }
     }
 
 }
