@@ -52,6 +52,9 @@ ul {
   .picture--work img {
     border-radius: 0px 60px;
   }
+  .picture--recall img {
+    border-radius: 0px 110px;
+  }
   .header {
     background-color: #F6DAFB;
     padding-top: 10px;
@@ -98,6 +101,9 @@ ul {
   }
   .title--center {
     text-align: center;
+  }
+  .title--recall {
+    margin-bottom: 20px;
   }
   .list--courses {
     padding-left: 42px;
@@ -192,6 +198,10 @@ ul {
     line-height: 25px;
     color: #7E678B;
     margin-bottom: 18px;
+  }
+  .recall {
+    padding-top: 100px;
+    background: linear-gradient(152.6deg, #CB8CB1 2.14%, #F5D4F7 120.73%);
   }
 }
 @media (min-width: 375px) {

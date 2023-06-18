@@ -78,6 +78,10 @@ ul {
         &--work img {
             border-radius: 0px 60px;
         }
+
+        &--recall img{
+            border-radius: 0px 110px;
+        }
     }
 
     .header {
@@ -135,6 +139,10 @@ ul {
 
         &--center {
             text-align: center;
+        }
+
+        &--recall {
+            margin-bottom: 20px;
         }
     }
 
@@ -254,6 +262,12 @@ ul {
                 margin-bottom: 18px;
            }
         }
+    }
+
+    .recall {
+
+        padding-top: 100px;
+        background: linear-gradient(152.6deg, #CB8CB1 2.14%, #F5D4F7 120.73%);;
     }
 
 }
